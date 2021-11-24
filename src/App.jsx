@@ -1,7 +1,7 @@
-import { useState } from "react";
-import styled from "styled-components";
-import { Stack } from "@tymate/margaret";
-import logo from "./images/logo.svg";
+import { useState } from 'react';
+import { Stack } from '@tymate/margaret';
+import styled from 'styled-components';
+import logo from './images/logo.svg';
 
 const Content = styled.div`
   display: grid;
@@ -25,7 +25,7 @@ const App = () => {
       <Stack direction="column" alignX="center">
         <p>Hello Vite + React!</p>
         <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
+          <button type="button" onClick={() => setCount(count => count + 1)}>
             count is: {count}
           </button>
         </p>
