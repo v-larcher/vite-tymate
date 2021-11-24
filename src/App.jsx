@@ -14,6 +14,7 @@ const Content = styled.div`
 
 const Image = styled.img`
   width: 25vw;
+  margin: 0 auto;
 `;
 
 const App = () => {
@@ -22,13 +23,11 @@ const App = () => {
   return (
     <Content>
       <Image src={logo} className="App-logo" alt="logo" />
-      <Stack direction="column" alignX="center">
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount(count => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
+      <Stack direction="column" alignX="center" gap={2}>
+        <div>Hello Vite + React + Margaret + Eslint + Prettier!</div>
+        <button type="button" onClick={() => setCount(count => count + 1)}>
+          count is: {count}
+        </button>
       </Stack>
     </Content>
   );
